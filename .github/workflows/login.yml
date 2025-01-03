@@ -41,4 +41,5 @@ jobs:
         run: | 
           chmod +x src/main.js
           set -e  
-          xvfb-run --server-args="-screen 0 1280x1024x24" node src/main.js
+          xvfb-run --server-args="-screen 0 1280x1024x24" node src/main.js --no-sandbox
+
